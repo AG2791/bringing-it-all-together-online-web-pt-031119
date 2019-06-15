@@ -28,8 +28,10 @@ end
 def self.drop_table
   sql = <<-SQL
   sql = DROP TABLE IF NOT EXISTS dogs
+  SQL
   DB[:conn].execute(sql)
-   SQL 
+   
+   
 end
  
 def self.new_from_table
