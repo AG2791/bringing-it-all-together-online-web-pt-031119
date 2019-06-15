@@ -33,7 +33,7 @@ def self.drop_table
    
 end
  
-def self.new_from_db
+def self.new_from_db(row)
   id = row[0]
   name = row [1]
   breed = row[2]
