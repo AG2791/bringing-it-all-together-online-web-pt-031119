@@ -54,9 +54,9 @@ def self.find_by_name(name)
     end.first
   end
   
-# def update
+def update
    
-# end
+end
  
 # def save
    
