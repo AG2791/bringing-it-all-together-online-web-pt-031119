@@ -27,7 +27,7 @@ end
  
 def self.drop_table
   sql = <<-SQL
-  sql = DROP TABLE IF NOT EXISTS dogs
+  DROP TABLE IF NOT EXISTS dogs
   SQL
   
   DB[:conn].execute(sql)
