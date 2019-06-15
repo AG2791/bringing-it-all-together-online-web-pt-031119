@@ -26,6 +26,7 @@ end
 
  
 def self.drop_table
+  
   sql = <<-SQL
   sql = DROP TABLE IF NOT EXISTS dogs
   SQL
