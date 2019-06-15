@@ -34,7 +34,7 @@ def self.drop_table
    
 end
  
-def self.new_from_table
+def self.new_from_db
    
 end
  
