@@ -38,9 +38,9 @@ def self.new_from_table
    
 end
  
-# def self.find_by_name
+def self.find_by_name
    
-# end
+end
  
 # def update
    
