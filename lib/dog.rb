@@ -31,7 +31,6 @@ def self.drop_table
   SQL
   DB[:conn].execute(sql)
    
-   
 end
  
 def self.new_from_table
