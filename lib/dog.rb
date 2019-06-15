@@ -60,6 +60,21 @@ def update
     DB[:conn].execute(sql, self.name, self.breed, self.id)
    
 end
+
+
+def self.find_by_id(id)
+    sql = <<-SQL
+      SELECT * FROM dogs
+      WHERE id = ?
+      LIMIT 1
+    SQL
+
+    DB[:conn].execute(sql,id).map do |row|
+      self.new_from_db(row)
+    end.first
+  end
+
+
  
 def save
   
@@ -86,8 +101,7 @@ def self.create(name:, breed:)
 
 def self.find_or_create_by(name:, breed:)
     sql = <<-SQL
-          SELECT *
-          FROM dogs
+          SELECT * FROM dogs
           WHERE name = ?
           AND breed = ?
           LIMIT 1
