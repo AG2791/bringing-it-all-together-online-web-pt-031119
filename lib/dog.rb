@@ -34,6 +34,8 @@ def self.drop_table
 end
  
 def self.new_from_db
+  id = row[0]
+  name = row []
    
 end
  
