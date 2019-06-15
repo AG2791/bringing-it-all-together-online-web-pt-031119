@@ -77,6 +77,13 @@ def save
    
 end
 
+def self.create(name:, breed:)
+    dog = Dog.new(name: name, breed: breed)
+    dog.save
+    dog
+  end
+  
+
 def self.find_or_create_by(name:, breed:)
     sql = <<-SQL
           SELECT *
